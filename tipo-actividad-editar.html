@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font" />
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <ul>
+                <li class="nav-logo"><a href="index.html"><img src="public/images/logo.png" alt="Logo"/></a></li>
+                <li class="nav-item"><a href="usuario-admin.html">Administrar Usuarios</a></li>
+                <li class="nav-item"><a href="tipo-actividad-admin.html">Administrar Tipos de Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="contenedor-fondo">
+            <img src="public/images/ellipse1.png" class="elipse-izq" alt="Elipse Izquierda" />
+            <img src="public/images/ellipse2.png" class="elipse-der" alt="Elipse Derecha"/>
+        </div>
+        <div class="contenedor-main">
+            <div class="content-formulario formulario-imagen formulario-actividad">
+                <h3>Editar Tipo de Actividad</h3>
+                <form>
+                    <div class="form-control">
+                        <label>Tipo de Actividad</label>
+                        <input type="text" name="nombre" placeholder="Tipo Actividad"/>
+                    </div>
+                    <div class="form-control">
+                        <label>Descripción</label>
+                        <input type="text" name="descripcion" placeholder="Descripción Actividad"/>
+                    </div>
+                    <div class="contenedor-botones">
+                        <div class="boton-icon save">
+                            <a href="tipo-actividad-admin.html?mensaje=Registro Guardado Satisfactoriamente">Guardar</a>
+                        </div>
+                        <div class="boton-icon cancel">
+                            <a href="tipo-actividad-admin.html?mensaje=Proceso cancelado">Cancelar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
